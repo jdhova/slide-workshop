@@ -1,5 +1,6 @@
 let index = 0;
 let slideIndex = 0;
+let colorIndex = 0;
 
 
 const img = document.querySelector("img");
@@ -24,16 +25,8 @@ const frameworkArray = [
 
 // Event Listener
 
-// img.addEventListener("click", function(){
-//     index++;
-//     if(index >= imgArray.length){
-//         index = 0;
-//     }
-//     img.src = imgArray[index];
-// });
 
-
-
+// Next Button JS
 
 next.addEventListener("click", function(){
     index++;
@@ -48,8 +41,14 @@ next.addEventListener("click", function(){
     if(slideIndex >= frameworkArray.length){
         slideIndex = 0;
     }
-    h2.innerHTML = frameworkArray[slideIndex];
+    h2.innerText = frameworkArray[slideIndex];
 });
+
+
+
+
+
+/// Back Arrow JS
 
 back.addEventListener("click", function(){
    
