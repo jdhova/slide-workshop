@@ -72,7 +72,7 @@ back.addEventListener("click", function(){
      if(slideIndex >= frameworkArray.length){
          slideIndex = 0;
      }
-     h2.innerHTML = frameworkArray[slideIndex];
+     h2.innerText = frameworkArray[slideIndex];
  });
  
 
