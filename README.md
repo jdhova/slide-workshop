@@ -43,3 +43,7 @@ Grade
 This workshop will be worth 10% of your grade
 
 ```
+
+## Solution
+
+![](image/solu.png)
