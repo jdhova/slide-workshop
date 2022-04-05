@@ -1,12 +1,13 @@
 let index = 0;
 let slideIndex = 0;
-let colorIndex = 0;
+//let colorIndex = 0;
 
 
 const img = document.querySelector("img");
 const back = document.getElementById("back-arrow");
 const next = document.getElementById("next-arrow");
 const h2 = document.querySelector("h2");
+//const color = document.querySelector("body");
 
 const imgArray = [ 
     "images/react.png",
@@ -23,6 +24,15 @@ const frameworkArray = [
 ];
 
 
+// const colorArray = [
+//     "white",
+//     "blue",
+//     "green",
+//     "yellow",
+// ];
+
+
+
 // Event Listener
 
 
@@ -35,6 +45,16 @@ next.addEventListener("click", function(){
     }
     img.src = imgArray[index];
 });
+
+// setInterval(next.addEventListener("click", function(){
+//     console.log("next");
+//     index++;
+//     if(index >= imgArray.length){
+//         index = 0;
+//     }
+//     img.src = imgArray[index];
+//     console.log("next2");
+// }), 100);
 
 next.addEventListener("click", function(){
     slideIndex++;
@@ -75,5 +95,20 @@ back.addEventListener("click", function(){
  });
  
 
+
+ //add timer to function
+
+// Color Change JS
+
+
+
+
+// next.addEventListener("click", function(){
+//     colorIndex++;
+//     if(colorIndex >= colorArray.length){
+//         colorIndex = 0;
+//     }
+//     color.style.backgroundColor = colorArray[colorIndex];
+// });
 
 
